@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabbir Ahmed Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/sabbir.jpg" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.4/dist/full.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .navbar-transparent {
+            background: transparent !important;
+            backdrop-filter: blur(8px);
+            box-shadow: none !important;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+    </style>
+</head>
+
+<body class="bg-base-200 text-base-content">
+
+    <!-- Navbar -->
+    <div id="main-navbar" class="navbar navbar-transparent sticky top-0 z-50">
+        <div class="flex-1">
+            <a href="#home" class="btn btn-ghost text-xl text-primary">Sabbir Ahmed</a>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div class="flex-none lg:hidden">
+            <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li> <!-- New item -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex gap-2">
+            <a href="#resume" class="btn btn-sm btn-outline btn-accent">Resume</a>
+            <a href="#projects" class="btn btn-sm btn-outline btn-primary">Projects</a>
+            <a href="#certifications" class="btn btn-sm btn-outline btn-accent">Certifications</a> <!-- New item -->
+            <a href="#contact" class="btn btn-sm btn-outline btn-info">Contact</a>
+        </div>
+
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="min-h-screen flex flex-col items-center justify-center p-10 text-base-content bg-gradient-to-br from-indigo-100 via-white to-pink-100 shadow-inner">
+        <div class="avatar mb-6">
+            <div
+                class="w-32 md:w-52 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 hover:scale-105 transition duration-300">
+                <img src="assets/sabbir.jpg" alt="Sabbir Ahmed">
+            </div>
+        </div>
+        <h1
+            class="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-500 to-pink-500 mb-3 text-center">
+            Sabbir Ahmed
+        </h1>
+        <p class="text-center text-lg text-gray-700 px-4 sm:px-0 leading-relaxed">
+        <p>
+            I am a Computer Science graduate from American International University-Bangladesh (AIUB) with <STrong>CGPA 3.81</STrong>. I have hands-on
+            experience in full-stack development, software Quality Assurance(SQA) and database systems. I have developed multiple projects including an <strong>Airport Management System</strong>
+            using PHP,JavaScript,MVC and an <strong>E-Commerce Database</strong> with Oracle/SQL, which demonstrates
+            my strong technical skills in web development and data management. I also publish a paper in <STrong>IEEE IATMSI</STrong> named
+            <strong>Machine Learning Models for Predicting Olympic Medal Outcomes</strong>. I have  earned certifications in Data Science, Python, and IT Essentials.
+        </p>
+        <br>
+        <p>
+            I have experience with <strong>UI/UX Design</strong> and prototyping using Figma, enabling me to create
+            user-centric, intuitive interfaces. I have proven my ability to design, develop, and deploy functional systems through academic projects. In
+            addition, I am a passionate <strong>problem-solver</strong> with expertise in C++, Python and JavaScript.  I am eager to apply my technical skills and quick learning ability to
+            professional challenges. I am committed to building efficient, scalable solutions while continuously developing my
+            technical capabilities.
+        </p>
+        </p>
+        <a href="assets/SABBIR_AHMED.pdf" download
+            class="btn mt-6 bg-gradient-to-r from-primary to-primary-focus text-white hover:scale-105 transition duration-300">
+            Download Resume
+        </a>
+
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="p-10">
+        <div class="card bg-white shadow-xl hover:shadow-2xl transition">
+            <div class="card-body">
+                <!-- Education Section -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-accent mb-4">Education</h3>
+                    <div class="space-y-4 text-sm sm:text-base">
+                        <div>
+                            <p class="font-bold text-base-content">American International University-Bangladesh</p>
+                            <p>BSc in CSE (2025), CGPA: 3.81</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-base-content">Govt. Science College</p>
+                            <p>HSC (2020), GPA: 5.00</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-base-content">Dhaka Shiksha Board Laboratory School and College</p>
+                            <p>SSC (2018), GPA: 5.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Relevant Courses Section -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-accent mb-4">Relevant Courses</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Data Structures & Algorithms</li>
+                        <li>Database Management Systems</li>
+                        <li>Web Development</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Machine Learning</li>
+                    </ul>
+                </div>
+
+                <!-- Skills Section -->
+                <div>
+                    <h3 class="text-xl font-semibold text-accent mb-4">Skills</h3>
+                    <div class="flex flex-wrap gap-2 mt-3">
+                        <div class="badge badge-accent py-4 px-3">Figma</div>
+                        <div class="badge badge-primary py-4 px-3">C</div>
+                        <div class="badge badge-secondary py-4 px-3">C++</div>
+                        <div class="badge badge-accent py-4 px-3">Python</div>
+                        <div class="badge badge-info py-4 px-3">JavaScript</div>
+                        <div class="badge badge-success py-4 px-3">PHP</div>
+                        <div class="badge badge-warning py-4 px-3">HTML</div>
+                        <div class="badge badge-error py-4 px-3">CSS</div>
+                        <div class="badge badge-primary py-4 px-3">MySQL</div>
+                        <div class="badge badge-secondary py-4 px-3">Oracle DB</div>
+                        <div class="badge badge-info py-4 px-3">Git</div>
+                        <div class="badge badge-success py-4 px-3">VS Code</div>
+                        <div class="badge badge-accent py-4 px-3">Bootstrap</div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="p-10">
+        <h2 class="text-3xl font-bold text-primary mb-6">Projects</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="card bg-white shadow-lg hover:shadow-2xl transition">
+                <div class="card-body">
+                    <h3 class="card-title text-accent">Airport Management System (Web Development)</h3>
+                    <p>Designed the customer interface using HTML, CSS, JavaScript and Figma. Backend with PHP and
+                        MySQL, using MVC architecture.</p>
+                    <p class="mt-2"><strong>GitHub:</strong> <a class="link link-primary"
+                            href="https://github.com/Sabbir486/Airport-Management-Project" target="_blank">View
+                            Project</a></p>
+                </div>
+            </div>
+
+            <div class="card bg-white shadow-lg hover:shadow-2xl transition">
+                <div class="card-body">
+                    <h3 class="card-title text-accent">SQA Project</h3>
+                    <p>Developed a comprehensive test suite for a blood donation web application, focusing on testing and quality assurance.</p>
+                    <p class="mt-2"><strong>GitHub:</strong> <a class="link link-primary"
+                            href="https://github.com/Sabbir486/SQA-AIUB/tree/main/SQA%20Project" target="_blank">View Project</a>
+                    </p>
+                </div>
+            </div>
+           
+
+            <div class="card bg-white shadow-lg hover:shadow-2xl transition">
+                <div class="card-body">
+                    <h3 class="card-title text-accent">UI/UX (Figma Design)</h3>
+                    <p>Created user-friendly interfaces and prototypes using Figma. Focused on user demand and choices.</p>
+                    <p class="mt-2"><strong>GitHub:</strong> <a class="link link-primary" href="https://github.com/Sabbir486/Figma-Design" target="_blank">View
+                            Project</a></p>
+                </div>
+            </div>
+
+            <div class="card bg-white shadow-lg hover:shadow-2xl transition">
+                <div class="card-body">
+                    <h3 class="card-title text-accent">E-Commerce Database System</h3>
+                    <p>Developed a normalized database schema using Oracle DB and ER diagrams. Focused on SQL writing
+                        and data modeling.</p>
+                    <p class="mt-2"><strong>GitHub:</strong> <a class="link link-primary"
+                            href="https://github.com/Sabbir486/Database-Management-System" target="_blank">View
+                            Project</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="p-10">
+        <h2 class="text-3xl font-bold text-primary mb-6">Certifications</h2>
+        <div class="card bg-white shadow-xl hover:shadow-2xl transition">
+            <div class="card-body space-y-4 text-sm sm:text-base">
+                <div>
+                    <h4 class="font-semibold text-accent">Machine Learning Models for Predicting Olympic Medal Outcomes
+                    </h4>
+                    <p class="text-gray-600">IEEE IATMSI — March 2025</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-accent">Data Science Fundamentals</h4>
+                    <p class="text-gray-600">Ostad — March 2025</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-accent">Fundamentals of Python for Web Development</h4>
+                    <p class="text-gray-600">Ostad — March 2024</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-accent">IT Essentials: PC Hardware and Software</h4>
+                    <p class="text-gray-600">Cisco Networking Academy — June 2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updated Contact Section -->
+    <section id="contact" class="p-10 bg-gradient-to-r from-slate-100 via-slate-200 to-slate-100">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-primary mb-6">Contact Information</h2>
+            <div class="space-y-4 text-base text-gray-800">
+                <p>
+                    <strong class="text-accent">Phone:</strong>
+                    <span>+8801879775995</span>
+                </p>
+                <p>
+                    <strong class="text-accent">Email:</strong>
+                    <a href="mailto:sabbirahmed46486@gmail.com" class="text-blue-600 hover:underline">
+                        sabbirahmed46486@gmail.com
+                    </a>
+                </p>
+                <p>
+                    <strong class="text-accent">LinkedIn:</strong>
+                    <a class="text-blue-600 hover:underline" href="https://www.linkedin.com/in/sabbir-ahmed-a442b6301/"
+                        target="_blank">
+                        Sabbir Ahmed
+                    </a>
+                </p>
+                <p>
+                    <strong class="text-accent">GitHub:</strong>
+                    <a class="text-blue-600 hover:underline" href="https://github.com/Sabbir486" target="_blank">
+                        Sabbir Ahmed
+                    </a>
+                </p>
+                <p>
+                    <strong class="text-accent">Codeforces:</strong>
+                    <a class="text-blue-600 hover:underline" href="https://codeforces.com/profile/Sabbir486" target="_blank">
+                        Sabbir486
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
